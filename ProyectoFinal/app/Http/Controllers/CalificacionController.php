@@ -11,8 +11,9 @@ class CalificacionController extends Controller
 {
     public function index()
     {
-        $calificaciones = Calificacion::with(['estudiante', 'asignatura'])->get();
-        return response()->json($calificaciones);
+        return Calificacion::all();
+        // $calificaciones = Calificacion::with(['estudiante', 'asignatura'])->get();
+        // return response()->json($calificaciones);
     }
 
     public function store(Request $request)
@@ -28,12 +29,13 @@ class CalificacionController extends Controller
         return response()->json($calificacion, 201);
     }
 
-    public function show(Calificacion $calificacion)
+    public function show($id)
     {
-        return response()->json($calificacion->load(['estudiante', 'asignatura']));
+        return Calificacion::find($id)->with(['estudiante','asignatura'])->get();
+        // return response()->json($calificacion->load(['estudiante', 'asignatura']));
     }
-
-    public function update(Request $request, Calificacion $calificacion)
+    
+    public function update(Request $request, $id)
     {
         $validated = $request->validate([
             'estudiante_id' => 'exists:estudiantes,id', 
@@ -42,13 +44,17 @@ class CalificacionController extends Controller
             'periodo' => 'string'
         ]);
 
-        $calificacion->update($validated);
+        $calificacion = Calificacion::findOrFail($id);
+        $calificacion->update($request ->all());
         return response()->json($calificacion);
     }
 
-    public function destroy(Calificacion $calificacion)
+    public function destroy($id)
     {
+        $calificacion = Calificacion::findOrFail($id);
         $calificacion->delete();
         return response()->json(null, 204);
     }
+
+    
 }

@@ -1,0 +1,69 @@
+- - - - - - - - - WoW (Way of Working) - - - - - - - - -
+
+                Requisitos tecnológicos
+
+Para garantizar un entorno de desarrollo óptimo y sin contratiempos, es imprescindible contar con los siguientes requisitos tecnológicos instalados y configurados correctamente:
+
+- PHP 8.2 o superior        
+    Descarga desde: https://www.php.net/downloads
+    Comprueba la instalación ejecutando:
+        php -v
+
+- Composer (Gestor de dependencias de PHP)
+    Descarga desde: https://getcomposer.org/
+    Comprueba la instalación ejecutando:
+        composer -V
+
+- Laravel 10
+    Instalación global mediante Composer ejecutando:
+        composer global require laravel/installer
+    Comprueba la instalación ejecutando:
+        laravel --version
+
+- Base de datos MariaDB 10.5 o superior
+    Descarga desde: https://mariadb.org/download/
+    Comprueba la instalación ejecutando:
+        mariadb --version
+
+- Postman (Pruebas de endpoints de la API)
+    Descarga desde: https://www.postman.com/downloads/
+
+
+ - - - - Pasos para desplegar la aplicación:
+
+ - Clonar el repositorio del proyecto
+        git clone https://github.com/Alexiia99/ProyectoFinal
+        cd ProyectoFinal
+
+ - Instalar dependencias del proyecto
+        Composer install
+
+-  Configurar el entorno de la aplicación
+        Copiar el archivo de ejemplo:
+            cp .env.example .env
+        Editar el archivo .env con las credenciales de la base de datos:
+                DB_CONNECTION=mariadb
+                DB_HOST=127.0.0.1
+                DB_PORT=3306
+                DB_DATABASE=ProyectoFinal
+                DB_USERNAME=usuario
+                DB_PASSWORD=m1_s3cr3t
+
+
+-  Ejecutar migraciones y seeders
+    php artisan migrate --seed
+
+-  Iniciar el servidor de desarrollo
+    php artisan serve
+
+-  La aplicación estará disponible en: http://127.0.0.1:8000
+
+-  Importar la colección de Postman
+    Abre Postman y selecciona Import.
+    Carga el archivo postman_collection.json ubicado en la raíz del proyecto.
+    Validar el funcionamiento de la API mediante Postman
+    Compilar los assets del frontend (si aplica)
+    npm install && npm run dev
+
+Siguiendo estos pasos, tu entorno de desarrollo estará completamente funcional y listo para trabajar. Presta especial atención a cada detalle para evitar posibles contratiempos durante el proceso.
+

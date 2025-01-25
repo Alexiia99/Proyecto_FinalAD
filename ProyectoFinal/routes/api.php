@@ -10,6 +10,8 @@ use App\Http\Controllers\EstudianteAsignaturaController;
 use App\Http\Controllers\AulaController;
 use App\Http\Controllers\AsistenciaController;
 use App\Http\Controllers\AulaProfesorAsignaturaController;
+use App\Http\Controllers\LibroController;
+
 
 Route::apiResource('estudiantes', EstudianteController::class);
 Route::apiResource('profesores', ProfesorController::class);
@@ -19,3 +21,4 @@ Route::apiResource('estudiante-asignatura', EstudianteAsignaturaController::clas
 Route::apiResource('aulas', AulaController::class);
 Route::apiResource('asistencias', AsistenciaController::class);
 Route::apiResource('aula-profesor-asignatura', AulaProfesorAsignaturaController::class);
+Route::apiResource('libros', LibroController::class);
