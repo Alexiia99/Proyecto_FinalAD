@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('apellidos');
             $table->string('curso');
             $table->unsignedBigInteger('tutor')->nullable();
-            $table->foreign('tutor')->references('id')->on('profesores');
+            $table->foreign('tutor')->references('id')->on('profesores')->onDelete('cascade');;
             $table->timestamps();
         });
     }

@@ -22,3 +22,5 @@ Route::apiResource('aulas', AulaController::class);
 Route::apiResource('asistencias', AsistenciaController::class);
 Route::apiResource('aula-profesor-asignatura', AulaProfesorAsignaturaController::class);
 Route::apiResource('libros', LibroController::class);
+
+Route::get('test', [ProfesorController::class, 'test']);

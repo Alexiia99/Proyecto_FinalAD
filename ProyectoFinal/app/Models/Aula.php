@@ -12,6 +12,6 @@ class Aula extends Model
     
     public function asignaturas()
     {
-        return $this->belongsToMany(Asignatura::class);
+        return $this->belongsToMany(Asignatura::class, 'aula_profesor_asignatura', 'aula_id', 'materia_id');
     }
 }

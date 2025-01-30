@@ -450,7 +450,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"estudiante_id\": 1,\n    \"asignatura_id\": 1,\n    \"calificacion\": 8.5,\n    \"periodo\": \"1er Trimestre\"\n}",
+							"raw": "{\n    \"estudiante_id\": 1,\n    \"asignatura_id\": 1,\n    \"calificacion\": 8,\n    \"periodo\": \"1er Trimestre\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -490,7 +490,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/calificaciones/29",
+							"raw": "http://localhost:8000/api/calificaciones/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -499,20 +499,20 @@
 							"path": [
 								"api",
 								"calificaciones",
-								"29"
+								"3"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "Actualizar asistencia",
+					"name": "Actualizar calif",
 					"request": {
 						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"estudiante_id\": 1,\n    \"asignatura_id\": 1,\n    \"calificacion\": 8.5,\n    \"periodo\": \"1er Trimestre\"\n}",
+							"raw": "{\n    \"estudiante_id\": 1,\n    \"asignatura_id\": 1,\n    \"calificacion\": 9,\n    \"periodo\": \"1er Trimestre\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -520,7 +520,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/calificaciones/2",
+							"raw": "http://localhost:8000/api/calificaciones/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -529,19 +529,19 @@
 							"path": [
 								"api",
 								"calificaciones",
-								"2"
+								"3"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "Eliminar Asistencia",
+					"name": "Eliminar Calificaciones",
 					"request": {
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8000/api/calificaciones/2",
+							"raw": "http://localhost:8000/api/calificaciones/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -550,7 +550,7 @@
 							"path": [
 								"api",
 								"calificaciones",
-								"2"
+								"3"
 							]
 						}
 					},
@@ -1102,6 +1102,81 @@
 							"path": [
 								"api",
 								"aula-profesor-asignatura",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Libros",
+			"item": [
+				{
+					"name": "Todos los libros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/libros",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"libros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Añadir libro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Java para principiantes\" ,\n            \"asignatura_id\" : 2 \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/libros",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"libros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar libros",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/libros/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"libros",
 								"1"
 							]
 						}

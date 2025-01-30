@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('calificaciones', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('estudiante_id')->constrained('estudiantes'); // Cambiado de 'alumnos' a 'estudiantes'
-            $table->foreignId('asignatura_id')->constrained('asignaturas');
+            $table->foreignId('estudiante_id')->constrained('estudiantes')->onDelete('cascade'); // Cambiado de 'alumnos' a 'estudiantes'
+            $table->foreignId('asignatura_id')->constrained('asignaturas')->onDelete('cascade');
             $table->decimal('calificacion', 5, 2);
             $table->string('periodo');
             $table->timestamps();

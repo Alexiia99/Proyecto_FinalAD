@@ -1,0 +1,50 @@
+[90m= [39m[34;4mIlluminate\Database\Eloquent\Collection[39;24m {#6206
+    [34mall[39m: [
+      [34;4mApp\Models\Estudiante[39;24m {#6204
+        [34mid[39m: [35m1[39m,
+        [34mnombre[39m: "[32mMario[39m",
+        [34mapellidos[39m: "[32mPascual[39m",
+        [34mcurso[39m: "[32mDAM2[39m",
+        [34mtutor[39m: [35m1[39m,
+        [34mcreated_at[39m: "[32m2025-01-28 18:06:11[39m",
+        [34mupdated_at[39m: "[32m2025-01-28 18:06:11[39m",
+        [34mpivot[39m: [34;4mIlluminate\Database\Eloquent\Relations\Pivot[39;24m {#6208
+          [34masignatura_id[39m: [35m1[39m,
+          [34mestudiante_id[39m: [35m1[39m,
+          [34mfecha_inicio[39m: "[32m2024-09-15[39m",
+          [34mfecha_fin[39m: "[32m2025-06-21[39m",
+        },
+      },
+      [34;4mApp\Models\Estudiante[39;24m {#6216
+        [34mid[39m: [35m2[39m,
+        [34mnombre[39m: "[32mDavid[39m",
+        [34mapellidos[39m: "[32mSoler[39m",
+        [34mcurso[39m: "[32mDAM1[39m",
+        [34mtutor[39m: [35m2[39m,
+        [34mcreated_at[39m: "[32m2025-01-28 18:06:11[39m",
+        [34mupdated_at[39m: "[32m2025-01-28 18:06:11[39m",
+        [34mpivot[39m: [34;4mIlluminate\Database\Eloquent\Relations\Pivot[39;24m {#6202
+          [34masignatura_id[39m: [35m1[39m,
+          [34mestudiante_id[39m: [35m2[39m,
+          [34mfecha_inicio[39m: "[32m2024-09-15[39m",
+          [34mfecha_fin[39m: "[32m2025-06-21[39m",
+        },
+      },
+      [34;4mApp\Models\Estudiante[39;24m {#6223
+        [34mid[39m: [35m3[39m,
+        [34mnombre[39m: "[32mMartin[39m",
+        [34mapellidos[39m: "[32mErnst[39m",
+        [34mcurso[39m: "[32mDAW2[39m",
+        [34mtutor[39m: [35m1[39m,
+        [34mcreated_at[39m: "[32m2025-01-28 18:06:11[39m",
+        [34mupdated_at[39m: "[32m2025-01-28 18:06:11[39m",
+        [34mpivot[39m: [34;4mIlluminate\Database\Eloquent\Relations\Pivot[39;24m {#6203
+          [34masignatura_id[39m: [35m1[39m,
+          [34mestudiante_id[39m: [35m3[39m,
+          [34mfecha_inicio[39m: "[32m2024-09-15[39m",
+          [34mfecha_fin[39m: "[32m2025-06-21[39m",
+        },
+      },
+    ],
+  }
+

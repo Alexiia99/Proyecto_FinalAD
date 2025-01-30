@@ -23,7 +23,8 @@ class DatabaseSeeder extends Seeder
             AsistenciasSeeder::class,
             EstudianteAsignaturaSeeder::class,
             CalificacionSeeder::class,
-            AulaProfesorAsignaturaSeeder::class
+            AulaProfesorAsignaturaSeeder::class,
+            LibroSeeder::class
         ]);
     }
 }

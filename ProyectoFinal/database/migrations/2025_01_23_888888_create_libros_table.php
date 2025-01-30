@@ -12,7 +12,7 @@ class CreateLibrosTable extends Migration
             $table->id();
             $table->string('nombre');
             $table->unsignedBigInteger('asignatura_id');
-            $table->foreign('asignatura_id')->references('id')->on('asignaturas');
+            $table->foreign('asignatura_id')->references('id')->on('asignaturas')->onDelete('cascade');
             $table->timestamps();
         });
     }

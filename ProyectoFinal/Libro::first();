@@ -1,0 +1,41 @@
+[90m= [39m[34;4mIlluminate\Database\Eloquent\Collection[39;24m {#6206
+    [34mall[39m: [
+      [34;4mApp\Models\Asistencia[39;24m {#6202
+        [34mid[39m: [35m1[39m,
+        [34mestudiante_id[39m: [35m1[39m,
+        [34masignatura_id[39m: [35m1[39m,
+        [34mfecha[39m: "[32m2023-06-08[39m",
+        [34mestado[39m: [35m0[39m,
+        [34mcreated_at[39m: "[32m2025-01-28 18:20:05[39m",
+        [34mupdated_at[39m: "[32m2025-01-28 18:20:05[39m",
+      },
+      [34;4mApp\Models\Asistencia[39;24m {#6201
+        [34mid[39m: [35m3[39m,
+        [34mestudiante_id[39m: [35m1[39m,
+        [34masignatura_id[39m: [35m3[39m,
+        [34mfecha[39m: "[32m2023-06-08[39m",
+        [34mestado[39m: [35m0[39m,
+        [34mcreated_at[39m: "[32m2025-01-28 18:20:05[39m",
+        [34mupdated_at[39m: "[32m2025-01-28 18:20:05[39m",
+      },
+      [34;4mApp\Models\Asistencia[39;24m {#6216
+        [34mid[39m: [35m4[39m,
+        [34mestudiante_id[39m: [35m1[39m,
+        [34masignatura_id[39m: [35m2[39m,
+        [34mfecha[39m: "[32m2023-06-08[39m",
+        [34mestado[39m: [35m1[39m,
+        [34mcreated_at[39m: "[32m2025-01-28 18:20:05[39m",
+        [34mupdated_at[39m: "[32m2025-01-28 18:20:05[39m",
+      },
+      [34;4mApp\Models\Asistencia[39;24m {#6223
+        [34mid[39m: [35m5[39m,
+        [34mestudiante_id[39m: [35m1[39m,
+        [34masignatura_id[39m: [35m1[39m,
+        [34mfecha[39m: "[32m2023-06-08[39m",
+        [34mestado[39m: [35m1[39m,
+        [34mcreated_at[39m: "[32m2025-01-28 18:20:50[39m",
+        [34mupdated_at[39m: "[32m2025-01-28 18:20:50[39m",
+      },
+    ],
+  }
+

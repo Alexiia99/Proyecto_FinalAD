@@ -1,0 +1,23 @@
+[90m= [39m[34;4mIlluminate\Database\Eloquent\Collection[39;24m {#6222
+    [34mall[39m: [
+      [34;4mApp\Models\Estudiante[39;24m {#6262
+        [34mid[39m: [35m1[39m,
+        [34mnombre[39m: "[32mMario[39m",
+        [34mapellidos[39m: "[32mPascual[39m",
+        [34mcurso[39m: "[32mDAM2[39m",
+        [34mtutor[39m: [35m1[39m,
+        [34mcreated_at[39m: "[32m2025-01-28 17:42:50[39m",
+        [34mupdated_at[39m: "[32m2025-01-28 17:42:50[39m",
+      },
+      [34;4mApp\Models\Estudiante[39;24m {#6264
+        [34mid[39m: [35m3[39m,
+        [34mnombre[39m: "[32mMartin[39m",
+        [34mapellidos[39m: "[32mErnst[39m",
+        [34mcurso[39m: "[32mDAW2[39m",
+        [34mtutor[39m: [35m1[39m,
+        [34mcreated_at[39m: "[32m2025-01-28 17:42:50[39m",
+        [34mupdated_at[39m: "[32m2025-01-28 17:42:50[39m",
+      },
+    ],
+  }
+

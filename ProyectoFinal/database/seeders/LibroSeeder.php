@@ -9,6 +9,9 @@ class LibroSeeder extends Seeder
 {
     public function run()
     {
-        Libro::factory(3)->create();
+        Libro::create([
+            'nombre' => 'Inicios de DB',
+            'asignatura_id' => 1
+        ]);
     }
 }

@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('aula_profesor_asignatura', function (Blueprint $table) {
             $table->id();
             $table->foreignId('aula_id')->constrained('aulas');
-            $table->foreignId('profesor_id')->constrained('profesores'); // Cambiado de profesors a profesores
-            $table->foreignId('materia_id')->constrained('asignaturas');
+            $table->foreignId('profesor_id')->constrained('profesores')->onDelete('cascade'); // Cambiado de profesors a profesores
+            $table->foreignId('materia_id')->constrained('asignaturas')->onDelete('cascade');
             $table->date('fecha_inicio');
             $table->date('fecha_fin');
             $table->timestamps();

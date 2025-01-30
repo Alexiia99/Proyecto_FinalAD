@@ -1,0 +1,47 @@
+[90m= [39m[34;4mIlluminate\Database\Eloquent\Collection[39;24m {#6206
+    [34mall[39m: [
+      [34;4mApp\Models\Asignatura[39;24m {#6204
+        [34mid[39m: [35m1[39m,
+        [34mnombre[39m: "[32mAcceso a datos[39m",
+        [34mdescripcion[39m: "[32mCurso de Acceso a Datos con API REST y Laravel[39m",
+        [34mprofesor_id[39m: [35m2[39m,
+        [34mcreated_at[39m: "[32m2025-01-28 18:06:11[39m",
+        [34mupdated_at[39m: "[32m2025-01-28 18:06:11[39m",
+        [34mpivot[39m: [34;4mIlluminate\Database\Eloquent\Relations\Pivot[39;24m {#6208
+          [34mestudiante_id[39m: [35m1[39m,
+          [34masignatura_id[39m: [35m1[39m,
+          [34mfecha_inicio[39m: "[32m2024-09-15[39m",
+          [34mfecha_fin[39m: "[32m2025-06-21[39m",
+        },
+      },
+      [34;4mApp\Models\Asignatura[39;24m {#6216
+        [34mid[39m: [35m2[39m,
+        [34mnombre[39m: "[32mProgramación Java[39m",
+        [34mdescripcion[39m: "[32mCurso de lenguaje de programación Java[39m",
+        [34mprofesor_id[39m: [35m1[39m,
+        [34mcreated_at[39m: "[32m2025-01-28 18:06:11[39m",
+        [34mupdated_at[39m: "[32m2025-01-28 18:06:11[39m",
+        [34mpivot[39m: [34;4mIlluminate\Database\Eloquent\Relations\Pivot[39;24m {#6202
+          [34mestudiante_id[39m: [35m1[39m,
+          [34masignatura_id[39m: [35m2[39m,
+          [34mfecha_inicio[39m: "[32m2024-09-15[39m",
+          [34mfecha_fin[39m: "[32m2025-06-21[39m",
+        },
+      },
+      [34;4mApp\Models\Asignatura[39;24m {#6223
+        [34mid[39m: [35m3[39m,
+        [34mnombre[39m: "[32mSistemas informáticos[39m",
+        [34mdescripcion[39m: "[32mCurso más aburrido de todos, damos solo teoría[39m",
+        [34mprofesor_id[39m: [35m1[39m,
+        [34mcreated_at[39m: "[32m2025-01-28 18:06:11[39m",
+        [34mupdated_at[39m: "[32m2025-01-28 18:06:11[39m",
+        [34mpivot[39m: [34;4mIlluminate\Database\Eloquent\Relations\Pivot[39;24m {#6203
+          [34mestudiante_id[39m: [35m1[39m,
+          [34masignatura_id[39m: [35m3[39m,
+          [34mfecha_inicio[39m: "[32m2024-09-15[39m",
+          [34mfecha_fin[39m: "[32m2025-06-21[39m",
+        },
+      },
+    ],
+  }
+
