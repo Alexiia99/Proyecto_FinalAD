@@ -5,35 +5,50 @@
 Para garantizar un entorno de desarrollo óptimo y sin contratiempos, es imprescindible contar con los siguientes requisitos tecnológicos instalados y configurados correctamente:
 
 - PHP 8.2 o superior        
-    Descarga desde: https://www.php.net/downloads
+    Descarga desde: https://www.php.net/downloads    
+    o ejecuta:  
+        sudo apt update
+        sudo apt install -y php8.2 php8.2-cli php8.2-fpm php8.2-mbstring php8.2-xml php8.2-mysql php8.2-curl
+
     Comprueba la instalación ejecutando:
         php -v
 
 - Composer (Gestor de dependencias de PHP)
-    Descarga desde: https://getcomposer.org/
+    Descarga desde: https://getcomposer.org/      
+    o ejecuta: 
+        curl -sS https://getcomposer.org/installer | php
+        sudo mv composer.phar /usr/local/bin/composer
+
     Comprueba la instalación ejecutando:
         composer -V
 
 - Laravel 10
     Instalación global mediante Composer ejecutando:
         composer global require laravel/installer
+
     Comprueba la instalación ejecutando:
         laravel --version
 
 - Base de datos MariaDB 10.5 o superior
     Descarga desde: https://mariadb.org/download/
+    o ejecuta:
+        sudo apt update
+        sudo apt install -y mariadb-server
+
     Comprueba la instalación ejecutando:
         mariadb --version
 
 - Postman (Pruebas de endpoints de la API)
     Descarga desde: https://www.postman.com/downloads/
+    o ejecuta:
+        sudo snap install postman
 
 
  - - - - Pasos para desplegar la aplicación:
 
  - Clonar el repositorio del proyecto
-        git clone https://github.com/Alexiia99/ProyectoFinal
-        cd ProyectoFinal
+        git clone https://github.com/Alexiia99/Proyecto_FinalAD
+        cd Proyecto_FinalAD
 
  - Instalar dependencias del proyecto
         Composer install
